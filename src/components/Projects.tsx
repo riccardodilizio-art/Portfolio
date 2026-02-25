@@ -127,13 +127,13 @@ export function Projects() {
                   alt={`Foto ${i + 1}`}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                {/* Placeholder */}
+                {/* Placeholder
                 <div className="absolute inset-0 photo-placeholder rounded-2xl">
                   <div className="flex flex-col items-center gap-2">
                     <Camera className="w-8 h-8" />
                     <span className="text-xs">{filename}</span>
                   </div>
-                </div>
+                </div>*/}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             ))}

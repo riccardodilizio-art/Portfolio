@@ -89,13 +89,13 @@ export function About() {
                   alt="Riccardo Di Lizio al lavoro"
                   className="w-full h-full object-cover"
                 />
-                {/* Placeholder visivo - sparisce quando c'è la foto */}
+                {/* Placeholder visivo - sparisce quando c'è la foto
                 <div className="absolute inset-0 photo-placeholder">
                   <div className="flex flex-col items-center gap-2">
                     <User className="w-12 h-12" />
                     <span>about.jpg</span>
                   </div>
-                </div>
+                </div>*/}
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent" />
                 {/* Decorative corners */}

@@ -18,19 +18,17 @@ function ProfilePhoto() {
       <div className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 animate-[gradient-shift_8s_ease_infinite]" style={{ backgroundSize: '200% 200%' }} />
       {/* Photo container */}
       <div className="relative w-full h-full rounded-full overflow-hidden bg-slate-800">
-        {/*
-          PLACEHOLDER: Sostituisci con la tua foto profilo.
-          Metti il file in: public/images/profile.jpg
-        */}
+
         <ImageWithFallback
           src="/images/profile.jpg"
           alt="Riccardo Di Lizio"
           className="w-full h-full object-cover"
         />
-        {/* Fallback icon - si vede solo se la foto non esiste */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        {/* Fallback icon - si vede solo se la foto non esiste
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <User className="w-16 h-16 text-slate-600 opacity-50" />
         </div>
+        */}
       </div>
     </div>
   );
