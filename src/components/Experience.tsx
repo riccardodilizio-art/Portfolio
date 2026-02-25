@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { Rocket, Globe, MapPin, Calendar, Camera } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { PhotoWithPlaceholder } from './PhotoWithPlaceholder';
 import type { ExperienceItem } from '../types';
 
 interface ExperienceWithPhoto extends ExperienceItem {
@@ -138,19 +138,17 @@ export function Experience() {
                       {/* Photo */}
                       {exp.photo && (
                         <div className="relative rounded-2xl overflow-hidden aspect-[21/9]">
-                          <ImageWithFallback
+                          <PhotoWithPlaceholder
                             src={exp.photo}
                             alt={exp.photoAlt ?? ''}
                             className="w-full h-full object-cover"
+                            placeholderContent={
+                              <div className="flex flex-col items-center gap-2">
+                                <Camera className="w-10 h-10" />
+                                <span>{exp.photo.split('/').pop()}</span>
+                              </div>
+                            }
                           />
-                          {/* Placeholder */}
-                          <div className="absolute inset-0 photo-placeholder">
-                            <div className="flex flex-col items-center gap-2">
-                              <Camera className="w-10 h-10" />
-                              <span>{exp.photo.split('/').pop()}</span>
-                            </div>
-                          </div>
-                          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent" />
                         </div>
                       )}
                     </div>

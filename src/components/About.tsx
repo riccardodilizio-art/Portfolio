@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { Code2, Trophy, Lightbulb, Target, User } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { staggerDelay } from '../utils/animations';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { PhotoWithPlaceholder } from './PhotoWithPlaceholder';
 import type { Stat, FeatureCard } from '../types';
 
 const STATS: Stat[] = [
@@ -84,20 +84,17 @@ export function About() {
                   PLACEHOLDER: Sostituisci con la tua foto.
                   Metti il file in: public/images/about.jpg
                 */}
-                <ImageWithFallback
+                <PhotoWithPlaceholder
                   src="/images/about.jpg"
                   alt="Riccardo Di Lizio al lavoro"
                   className="w-full h-full object-cover"
+                  placeholderContent={
+                    <div className="flex flex-col items-center gap-2">
+                      <User className="w-12 h-12" />
+                      <span>about.jpg</span>
+                    </div>
+                  }
                 />
-                {/* Placeholder visivo - sparisce quando c'è la foto */}
-                <div className="absolute inset-0 photo-placeholder">
-                  <div className="flex flex-col items-center gap-2">
-                    <User className="w-12 h-12" />
-                    <span>about.jpg</span>
-                  </div>
-                </div>
-                {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent" />
                 {/* Decorative corners */}
                 <div className="absolute top-4 left-4 w-12 h-12 border-t-2 border-l-2 border-white/40 rounded-tl-lg" />
                 <div className="absolute bottom-4 right-4 w-12 h-12 border-b-2 border-r-2 border-white/40 rounded-br-lg" />

@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Github, Linkedin, Mail, User } from 'lucide-react';
 import { scrollToSection } from '../utils/scrollToSection';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { PhotoWithPlaceholder } from './PhotoWithPlaceholder';
 
 const SOCIAL_LINKS = [
   { icon: Mail, href: 'mailto:riccardo.dilizio@example.com', label: 'Email' },
@@ -22,15 +22,17 @@ function ProfilePhoto() {
           PLACEHOLDER: Sostituisci con la tua foto profilo.
           Metti il file in: public/images/profile.jpg
         */}
-        <ImageWithFallback
+        <PhotoWithPlaceholder
           src="/images/profile.jpg"
           alt="Riccardo Di Lizio"
           className="w-full h-full object-cover"
+          placeholderContent={
+            <div className="flex flex-col items-center gap-1">
+              <User className="w-12 h-12" />
+              <span className="text-xs">profile.jpg</span>
+            </div>
+          }
         />
-        {/* Fallback icon - si vede solo se la foto non esiste */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <User className="w-16 h-16 text-slate-600 opacity-50" />
-        </div>
       </div>
     </div>
   );
