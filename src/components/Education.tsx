@@ -9,7 +9,7 @@ const EDUCATION: EducationItem[] = [
     degree: 'Laurea Triennale in Informatica',
     institution: 'Universit\u00E0',
     status: 'In corso',
-    period: '2021 - Presente',
+    period: '2023 - Presente',
     gradient: 'from-blue-500 to-cyan-500',
   },
   {

@@ -8,7 +8,7 @@ import type { Stat, FeatureCard } from '../types';
 const STATS: Stat[] = [
   { number: '100', label: 'Voto Diploma', suffix: '/100' },
   { number: '3', label: 'Regioni Coperte', suffix: '+' },
-  { number: '2024', label: 'Startup Fondata', suffix: '' },
+  { number: '2023', label: 'Startup Fondata', suffix: '' },
   { number: '\u221E', label: 'Voglia di Imparare', suffix: '' },
 ];
 

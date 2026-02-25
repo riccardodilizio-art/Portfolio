@@ -4,9 +4,9 @@ import { scrollToSection } from '../utils/scrollToSection';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const SOCIAL_LINKS = [
-  { icon: Mail, href: 'mailto:riccardo.dilizio@example.com', label: 'Email' },
-  { icon: Linkedin, href: 'https://linkedin.com/in/riccardo-dilizio', label: 'LinkedIn' },
-  { icon: Github, href: 'https://github.com/riccardodilizio', label: 'GitHub' },
+  { icon: Mail, href: 'mailto:dlz.riccardo@gmail.com', label: 'Email' },
+  { icon: Linkedin, href: 'www.linkedin.com/in/riccardodilizio', label: 'LinkedIn' },
+  { icon: Github, href: 'https://github.com/nickrickf1', label: 'GitHub' },
 ] as const;
 
 function ProfilePhoto() {

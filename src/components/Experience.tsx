@@ -14,13 +14,13 @@ const EXPERIENCES: ExperienceWithPhoto[] = [
     icon: Rocket,
     title: 'Co-fondatore & Technical Lead',
     company: 'Startup Cronometraggi Sportivi',
-    period: '2024 - Presente',
+    period: '2023 - Presente',
     location: 'Abruzzo, Marche, Puglia',
     description:
       'Gestione completa di servizi di cronometraggio elettronico per eventi sportivi con tecnologia Race Result.',
     achievements: [
-      'Gestione tecnica di oltre 20+ eventi sportivi',
-      'Implementazione di sistemi di cronometraggio real-time',
+      'Gestione tecnica di oltre 100 eventi sportivi annuali',
+      'Gestione gare con sistemi di cronometraggio real-time',
       'Supporto on-site con risoluzione problemi immediata',
       'Espansione servizio in 3 regioni italiane',
     ],

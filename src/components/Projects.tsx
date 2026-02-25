@@ -74,7 +74,7 @@ export function Projects() {
                   </h3>
 
                   <p className="text-slate-300 mb-8 leading-relaxed text-lg">
-                    Sistema completo di cronometraggio elettronico per eventi sportivi.
+                    Servizio completo e professionale di cronometraggi di eventi sportivi.
                     Servizio professionale itinerante che garantisce precisione e affidabilità
                     in ogni competizione.
                   </p>
