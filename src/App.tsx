@@ -10,7 +10,7 @@ import { Contact } from './components/Contact';
 
 export default function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen grain">
       {/* Skip link for accessibility */}
       <a
         href="#about"
@@ -25,7 +25,7 @@ export default function App() {
         <Hero />
       </header>
 
-      <main className="bg-gradient-to-b from-slate-50 to-white">
+      <main>
         <About />
         <Experience />
         <Skills />
