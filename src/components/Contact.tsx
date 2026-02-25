@@ -8,22 +8,22 @@ const CONTACT_METHODS: ContactMethod[] = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'riccardo.dilizio@example.com',
-    href: 'mailto:riccardo.dilizio@example.com',
+    value: 'dlz.riccardo@gmail.com',
+    href: 'mailto:dlz.riccardo@gmail.com',
     gradient: 'from-blue-500 to-cyan-500',
   },
   {
     icon: Linkedin,
     label: 'LinkedIn',
     value: '/riccardo-dilizio',
-    href: 'https://linkedin.com/in/riccardo-dilizio',
+    href: 'www.linkedin.com/in/riccardodilizio',
     gradient: 'from-indigo-500 to-blue-500',
   },
   {
     icon: Github,
     label: 'GitHub',
     value: '/riccardodilizio',
-    href: 'https://github.com/riccardodilizio',
+    href: 'https://github.com/nickrickf1',
     gradient: 'from-slate-600 to-slate-800',
   },
 ];
@@ -124,7 +124,7 @@ export function Contact() {
               </p>
 
               <a
-                href="mailto:riccardo.dilizio@example.com"
+                href="mailto:dlz.riccardo@gmail.com"
                 className="group inline-flex items-center gap-3 px-10 py-5 bg-white text-slate-900 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300"
               >
                 <Mail className="w-5 h-5" />
