@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Code2, Trophy, Lightbulb, Target, User } from 'lucide-react';
+import { Code2, Trophy, Lightbulb, Target } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { staggerDelay } from '../utils/animations';
 import { ImageWithFallback } from './figma/ImageWithFallback';
@@ -80,22 +80,11 @@ export function About() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="relative mb-8 rounded-2xl overflow-hidden aspect-[4/3]"
               >
-                {/*
-                  PLACEHOLDER: Sostituisci con la tua foto.
-                  Metti il file in: public/images/about.jpg
-                */}
                 <ImageWithFallback
                   src="/images/about.jpg"
                   alt="Riccardo Di Lizio al lavoro"
                   className="w-full h-full object-cover"
                 />
-                {/* Placeholder visivo - sparisce quando c'è la foto
-                <div className="absolute inset-0 photo-placeholder">
-                  <div className="flex flex-col items-center gap-2">
-                    <User className="w-12 h-12" />
-                    <span>about.jpg</span>
-                  </div>
-                </div>*/}
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent" />
                 {/* Decorative corners */}

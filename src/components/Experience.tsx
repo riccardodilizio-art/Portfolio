@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Rocket, Globe, MapPin, Calendar, Camera } from 'lucide-react';
+import { Rocket, Globe, MapPin, Calendar } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import type { ExperienceItem } from '../types';
@@ -24,10 +24,6 @@ const EXPERIENCES: ExperienceWithPhoto[] = [
       'Supporto on-site con risoluzione problemi immediata',
       'Espansione servizio in 3 regioni italiane',
     ],
-    /*
-      PLACEHOLDER: Sostituisci con una tua foto ad un evento.
-      Metti il file in: public/images/event-1.jpg
-    */
     photo: '/images/event-1.jpg',
     photoAlt: 'Evento di cronometraggio sportivo',
   },
@@ -45,10 +41,6 @@ const EXPERIENCES: ExperienceWithPhoto[] = [
       'Applicazione pratica di conoscenze IT',
       'Networking professionale globale',
     ],
-    /*
-      PLACEHOLDER: Sostituisci con una tua foto ad Abu Dhabi.
-      Metti il file in: public/images/abudhabi.jpg
-    */
     photo: '/images/abudhabi.jpg',
     photoAlt: 'Esperienza PCTO Abu Dhabi',
   },
@@ -143,13 +135,6 @@ export function Experience() {
                             alt={exp.photoAlt ?? ''}
                             className="w-full h-full object-cover"
                           />
-                          {/* Placeholder */}
-                            {/*<div className="absolute inset-0 photo-placeholder">
-                            <div className="flex flex-col items-center gap-2">
-                              <Camera className="w-10 h-10" />
-                              <span>{exp.photo.split('/').pop()}</span>
-                            </div>
-                          </div>*/}
                           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent" />
                         </div>
                       )}

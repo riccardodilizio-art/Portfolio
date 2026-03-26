@@ -16,7 +16,7 @@ const CONTACT_METHODS: ContactMethod[] = [
     icon: Linkedin,
     label: 'LinkedIn',
     value: '/riccardo-dilizio',
-    href: 'www.linkedin.com/in/riccardodilizio',
+    href: 'https://www.linkedin.com/in/riccardodilizio',
     gradient: 'from-indigo-500 to-blue-500',
   },
   {

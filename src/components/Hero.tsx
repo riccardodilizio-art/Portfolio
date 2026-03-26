@@ -1,11 +1,11 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Github, Linkedin, Mail, User } from 'lucide-react';
+import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { scrollToSection } from '../utils/scrollToSection';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const SOCIAL_LINKS = [
   { icon: Mail, href: 'mailto:dlz.riccardo@gmail.com', label: 'Email' },
-  { icon: Linkedin, href: 'www.linkedin.com/in/riccardodilizio', label: 'LinkedIn' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/riccardodilizio', label: 'LinkedIn' },
   { icon: Github, href: 'https://github.com/nickrickf1', label: 'GitHub' },
 ] as const;
 
@@ -24,11 +24,6 @@ function ProfilePhoto() {
           alt="Riccardo Di Lizio"
           className="w-full h-full object-cover"
         />
-        {/* Fallback icon - si vede solo se la foto non esiste
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <User className="w-16 h-16 text-slate-600 opacity-50" />
-        </div>
-        */}
       </div>
     </div>
   );
