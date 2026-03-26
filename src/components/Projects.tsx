@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Timer, MapPin, Users, Zap, ExternalLink, Camera } from 'lucide-react';
+import { Timer, MapPin, Users, Zap, ExternalLink } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
@@ -50,10 +50,6 @@ export function Projects() {
               <div className="relative grid md:grid-cols-2 gap-0">
                 {/* Image */}
                 <div className="relative h-72 md:h-auto overflow-hidden">
-                  {/*
-                    PLACEHOLDER: Puoi anche sostituire con event-2.jpg.
-                    Metti il file in: public/images/event-2.jpg
-                  */}
                   <ImageWithFallback
                     src="https://images.unsplash.com/photo-1691675996849-78a298efe96a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdGhsZXRlJTIwcnVubmluZyUyMHRyYWNrfGVufDF8fHx8MTc2Njg1NjE2NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                     alt="Startup Cronometraggi Sportivi"
@@ -127,13 +123,6 @@ export function Projects() {
                   alt={`Foto ${i + 1}`}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                {/* Placeholder
-                <div className="absolute inset-0 photo-placeholder rounded-2xl">
-                  <div className="flex flex-col items-center gap-2">
-                    <Camera className="w-8 h-8" />
-                    <span className="text-xs">{filename}</span>
-                  </div>
-                </div>*/}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             ))}
