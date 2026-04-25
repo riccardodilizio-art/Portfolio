@@ -52,6 +52,7 @@ export default function App() {
         <Projects />
         <Values />
         <Contact />
+          <Ristoranti/>
       </main>
     </div>
   );
