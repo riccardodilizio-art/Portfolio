@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, UtensilsCrossed } from 'lucide-react';
 import { scrollToSection } from '../utils/scrollToSection';
 import type { NavItem } from '../types';
 
@@ -12,6 +12,8 @@ const NAV_ITEMS: NavItem[] = [
   { label: 'Progetti', id: 'projects' },
   { label: 'Contatti', id: 'contact' },
 ];
+
+const RISTORANTI_HREF = '/ristoranti';
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -64,6 +66,17 @@ export function Navbar() {
                   {item.label}
                 </button>
               ))}
+              <a
+                href={RISTORANTI_HREF}
+                className={`inline-flex items-center gap-2 text-sm font-semibold px-4 py-2 rounded-full transition-all ${
+                  isScrolled
+                    ? 'bg-slate-900 text-white hover:bg-orange-700'
+                    : 'bg-white/10 text-white border border-white/20 hover:bg-white/20'
+                }`}
+              >
+                <UtensilsCrossed className="w-4 h-4" />
+                Siti per ristoranti
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -106,6 +119,17 @@ export function Navbar() {
                   {item.label}
                 </motion.button>
               ))}
+              <motion.a
+                href={RISTORANTI_HREF}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: NAV_ITEMS.length * 0.05 }}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="mt-2 inline-flex items-center gap-3 text-xl font-semibold text-white bg-slate-900 py-3 px-4 rounded-xl hover:bg-orange-700 transition-colors"
+              >
+                <UtensilsCrossed className="w-5 h-5" />
+                Siti per ristoranti
+              </motion.a>
             </nav>
           </motion.div>
         )}
