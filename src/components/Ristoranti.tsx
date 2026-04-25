@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import './Ristoranti.css';
 
-const WHATSAPP_NUMBER = '393XXXXXXXXX';
+const WHATSAPP_NUMBER = '3713405167';
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Ciao%20Riccardo%2C%20ho%20un%20locale%20e%20vorrei%20info%20sul%20sito`;
 const EMAIL = 'dlz.riccardo@gmail.com';
 
